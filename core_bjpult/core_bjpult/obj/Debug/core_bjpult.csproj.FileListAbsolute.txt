@@ -1,1 +1,6 @@
 H:\projects\BJPult\BJPult\core_bjpult\core_bjpult\bin\Debug\core_bjpult.exe.config
+H:\projects\BJPult\BJPult\core_bjpult\core_bjpult\bin\Debug\core_bjpult.exe
+H:\projects\BJPult\BJPult\core_bjpult\core_bjpult\bin\Debug\core_bjpult.pdb
+H:\projects\BJPult\BJPult\core_bjpult\core_bjpult\obj\Debug\core_bjpult.csprojResolveAssemblyReference.cache
+H:\projects\BJPult\BJPult\core_bjpult\core_bjpult\obj\Debug\core_bjpult.exe
+H:\projects\BJPult\BJPult\core_bjpult\core_bjpult\obj\Debug\core_bjpult.pdb
