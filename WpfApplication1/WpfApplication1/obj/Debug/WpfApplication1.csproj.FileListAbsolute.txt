@@ -1,0 +1,13 @@
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.cs
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
+H:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
