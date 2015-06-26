@@ -218,8 +218,18 @@
 											Grid.Column="1"
 											Margin="11"/>
 									</StackPanel>
-
 								</Grid>
+							</GroupBox>
+							<GroupBox
+								Grid.Column="2"
+								Header=" 7"
+								Foreground="Black"
+								BorderThickness="1"
+								Margin="0,-8,0,0">
+								<HeaderedContentControl.FontSize>
+									20
+								</HeaderedContentControl.FontSize>
+
 							</GroupBox>
 
 							<!--<Grid
