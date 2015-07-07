@@ -3,6 +3,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WpfApplication1"
 	mc:Ignorable="d"
 	x:Name="BJDevices_Control"
 	x:Class="WpfApplication1.MainWindow"
@@ -12,7 +13,120 @@
 	Foreground="#FF573B3B"
 	Background="{x:Null}"
 	ScrollViewer.HorizontalScrollBarVisibility="Visible">
-
+    
+    <Window.Resources>
+        <Style TargetType="GroupBox" x:Key="BankGroupBox">            
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="GroupBox">
+                        <GroupBox Foreground="Black" 
+                                  BorderThickness="1"
+                                  Margin="0,-8,0,0"
+                                  Header="{TemplateBinding Header}"
+                                  >
+                            <HeaderedContentControl.FontSize>
+                                20
+                            </HeaderedContentControl.FontSize>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition  Height="30" />
+                                    <RowDefinition	Height="40" />
+                                    <RowDefinition	Height="40" />
+                                    <RowDefinition	Height="40" />
+                                    <RowDefinition	Height="40" />
+                                    <RowDefinition	Height="40" />
+                                </Grid.RowDefinitions>
+                                <TextBlock
+										Text="Type"
+										FontSize="14"
+										FontWeight="Black"
+										VerticalAlignment="Center"
+										Height="28"
+										Margin="10,0,0,0" />
+                                <ComboBox 
+										Grid.Row="0"
+										Height="30"
+										Width="60"
+										VerticalAlignment="Center"
+										HorizontalAlignment="Right"
+										Margin="0,0,10,0" 
+                                        ItemsSource="{Binding BankType}">
+                                </ComboBox>
+                                <TextBlock
+										Grid.Row="1"
+										Text="Preset 1"
+										FontSize="14"
+										FontWeight="Black"
+										VerticalAlignment="Center"
+										Margin="10,13,0,4"
+										Height="24" />
+                                <TextBox
+										Grid.Row="1"
+										Height="30"
+										Width="30"
+										Text="15"
+										FontSize="20"
+										VerticalAlignment="Center"
+										HorizontalAlignment="Right"
+										Margin="0,0,10,0" />
+                                <TextBlock
+										Grid.Row="2"
+										Text="Preset 2"
+										FontSize="14"
+										FontWeight="Black"
+										VerticalAlignment="Center"
+										HorizontalAlignment="Left"
+										Margin="10,0,0,0" />
+                                <TextBox
+										Grid.Row="2"
+										Height="30"
+										Width="30"
+										VerticalAlignment="Center"
+										HorizontalAlignment="Right"
+										Margin="0,0,10,0" />
+                                <TextBlock
+										Grid.Row="3"
+										Text="Bank sel"
+										FontSize="14"
+										FontWeight="Black"
+										VerticalAlignment="Center"
+										HorizontalAlignment="Left"
+										Margin="10,0,0,0" />
+                                <TextBox
+										Grid.Row="3"
+										Height="30"
+										Width="30"
+										VerticalAlignment="Center"
+										HorizontalAlignment="Right"
+										Margin="0,0,10,0" />
+                                <TextBlock
+										Grid.Row="4"
+										Text="Releys"
+										FontSize="14"
+										FontWeight="Black"
+										VerticalAlignment="Center"
+										HorizontalAlignment="Left"
+										Margin="10,0,0,0"/>
+                                <StackPanel Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center">
+                                    <CheckBox
+											Grid.Column="1"	Margin="11" />
+                                    <CheckBox
+											Grid.Column="1"
+											Margin="11" />
+                                    <CheckBox
+											Grid.Column="1"
+											Margin="11"/>
+                                    <CheckBox
+											Grid.Column="1"
+											Margin="11"/>
+                                </StackPanel>
+                            </Grid>
+                        </GroupBox>                        
+                    </ControlTemplate>                    
+                </Setter.Value>                
+             </Setter>
+        </Style>
+    </Window.Resources>        
 	<Grid
 		Background="Gray">
 		<TabControl
@@ -35,7 +149,6 @@
 							<RowDefinition
 								Height="200" />
 						</Grid.RowDefinitions>
-
 						<Button
 							Grid.Row="0"
 							Opacity="1"
@@ -43,7 +156,7 @@
 							Height="30"
 							Width="100"
 							Margin="239,25,672,46"
-							Content="Rename Bank" />
+							Content="Rename Bank" Click="RenameBank_Click" />
 						<TextBlock
 							Grid.Row="0"
 							Text="Bank #:"
@@ -96,151 +209,19 @@
 								<ColumnDefinition
 									Width="100" />
 							</Grid.ColumnDefinitions>
-
-							<GroupBox
-								Grid.Column="1"
-								Header=" 7"
-								Foreground="Black"
-								BorderThickness="1"
-								Margin="0,-8,0,0">
-								<HeaderedContentControl.FontSize>
-									20
-								</HeaderedContentControl.FontSize>
-								<Grid>
-									<Grid.RowDefinitions>
-										<RowDefinition
-											Height="30" />
-										<RowDefinition
-											Height="40" />
-										<RowDefinition
-											Height="40" />
-										<RowDefinition
-											Height="40" />
-										<RowDefinition
-											Height="40" />
-										<RowDefinition
-											Height="40" />
-									</Grid.RowDefinitions>
-
-									<TextBlock
-										Text="Type"
-										FontSize="14"
-										FontWeight="Black"
-										VerticalAlignment="Center"
-										Height="28"
-										Margin="10,0,0,0" />
-
-									<ComboBox
-										Grid.Row="0"
-										Height="30"
-										Width="60"
-										VerticalAlignment="Center"
-										HorizontalAlignment="Right"
-										Margin="0,0,10,0">
-										<ComboBoxItem
-											Content="PC" />
-										<ComboBoxItem
-											Content="CC_tg" />
-										<ComboBoxItem
-											Content="CC_mt" />
-										<ComboBoxItem
-											Content="CC_ct" />
-									</ComboBox>
-
-									<TextBlock
-										Grid.Row="1"
-										Text="Preset 1"
-										FontSize="14"
-										FontWeight="Black"
-										VerticalAlignment="Center"
-										Margin="10,13,0,4"
-										Height="24" />
-									<TextBox
-										Grid.Row="1"
-										Height="30"
-										Width="30"
-										Text="15"
-										FontSize="20"
-										VerticalAlignment="Center"
-										HorizontalAlignment="Right"
-										Margin="0,0,10,0" />
-
-									<TextBlock
-										Grid.Row="2"
-										Text="Preset 2"
-										FontSize="14"
-										FontWeight="Black"
-										VerticalAlignment="Center"
-										HorizontalAlignment="Left"
-										Margin="10,0,0,0" />
-									<TextBox
-										Grid.Row="2"
-										Height="30"
-										Width="30"
-										VerticalAlignment="Center"
-										HorizontalAlignment="Right"
-										Margin="0,0,10,0" />
-									<TextBlock
-										Grid.Row="3"
-										Text="Bank sel"
-										FontSize="14"
-										FontWeight="Black"
-										VerticalAlignment="Center"
-										HorizontalAlignment="Left"
-										Margin="10,0,0,0" />
-									<TextBox
-										Grid.Row="3"
-										Height="30"
-										Width="30"
-										VerticalAlignment="Center"
-										HorizontalAlignment="Right"
-										Margin="0,0,10,0" />
-									<TextBlock
-										Grid.Row="4"
-										Text="Releys"
-										FontSize="14"
-										FontWeight="Black"
-										VerticalAlignment="Center"
-										HorizontalAlignment="Left"
-										Margin="10,0,0,0"
-										/>
-									
-									<StackPanel Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center">
-										<CheckBox
-											Grid.Column="1"	Margin="11" />
-										<CheckBox
-											Grid.Column="1"
-											Margin="11" />
-										<CheckBox
-											Grid.Column="1"
-											Margin="11"/>											
-										<CheckBox
-											Grid.Column="1"
-											Margin="11"/>
-									</StackPanel>
-								</Grid>
-							</GroupBox>
-							<GroupBox
-								Grid.Column="2"
-								Header=" 7"
-								Foreground="Black"
-								BorderThickness="1"
-								Margin="0,-8,0,0">
-								<HeaderedContentControl.FontSize>
-									20
-								</HeaderedContentControl.FontSize>
-
-							</GroupBox>
-
-							<!--<Grid
-								Grid.Column="1">
-
-							</Grid>
--->
-
-							
-
-							
+                            <GroupBox 
+                                Grid.Column="1"
+                                Header=" 7" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="2"
+                                Header=" 8" 
+                                Style="{StaticResource BankGroupBox}">                                
+                            </GroupBox>
+                             
+                            <!--<Grid Grid.Column="1">
+							</Grid>-->
 							<!-- 
 							<Canvas
 								Grid.Column="1">
@@ -252,15 +233,7 @@
 									Canvas.Left="8"
 									Canvas.Top="8" />
 							</Canvas>
-							-->
-
-							<Border
-								Grid.Column="2"
-								BorderBrush="GhostWhite"
-								Background="WhiteSmoke"
-								Opacity="0.2"
-								Margin="8"
-								BorderThickness="4" />
+							-->                            
 						</Grid>
 					</Grid>
 				</Grid>

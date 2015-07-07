@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApplication1.ViewModel;
 
 namespace WpfApplication1
 {
@@ -20,9 +21,20 @@ namespace WpfApplication1
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+        MainWindowViewModel curState = new MainWindowViewModel();
 		public MainWindow()
 		{
 			InitializeComponent();
+            Initialize initClassObject = new Initialize();            
+            DataContext = curState;
+       //     curState.BankType.Add("1");
+       //     curState.BankType.Add("2");
+       //     curState.BankType.Add("3");
+        //  initClassObject.InitializeBankType(curState);
 		}
+        private void RenameBank_Click(object sender, RoutedEventArgs e)
+        {
+            //var Str = curState.BankType;          
+        }
 	}
 }
