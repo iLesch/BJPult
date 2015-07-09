@@ -30,7 +30,7 @@ namespace WpfApplication1
        //     curState.BankType.Add("1");
        //     curState.BankType.Add("2");
        //     curState.BankType.Add("3");
-        //  initClassObject.InitializeBankType(curState);
+       //     initClassObject.InitializeBankType(curState);
 		}
         private void RenameBank_Click(object sender, RoutedEventArgs e)
         {

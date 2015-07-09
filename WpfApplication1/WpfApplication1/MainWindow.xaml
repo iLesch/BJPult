@@ -8,8 +8,8 @@
 	x:Name="BJDevices_Control"
 	x:Class="WpfApplication1.MainWindow"
 	Title="BJDevices Control"
-	Height="650"
-	Width="1025"
+	Height="681"
+	Width="1079.5"
 	Foreground="#FF573B3B"
 	Background="{x:Null}"
 	ScrollViewer.HorizontalScrollBarVisibility="Visible">
@@ -64,7 +64,7 @@
 										Grid.Row="1"
 										Height="30"
 										Width="30"
-										Text="15"
+										Text="{Binding Path=Preset1.ContainsKey({TemplateBinding Header})}"
 										FontSize="20"
 										VerticalAlignment="Center"
 										HorizontalAlignment="Right"
@@ -101,7 +101,7 @@
 										Margin="0,0,10,0" />
                                 <TextBlock
 										Grid.Row="4"
-										Text="Releys"
+										Text="Relays"
 										FontSize="14"
 										FontWeight="Black"
 										VerticalAlignment="Center"
@@ -147,7 +147,7 @@
 							<RowDefinition
 								Height="250" />
 							<RowDefinition
-								Height="200" />
+								Height="250" />
 						</Grid.RowDefinitions>
 						<Button
 							Grid.Row="0"
@@ -209,7 +209,7 @@
 								<ColumnDefinition
 									Width="100" />
 							</Grid.ColumnDefinitions>
-                            <GroupBox 
+                            <GroupBox
                                 Grid.Column="1"
                                 Header=" 7" 
                                 Style="{StaticResource BankGroupBox}">
@@ -219,7 +219,26 @@
                                 Header=" 8" 
                                 Style="{StaticResource BankGroupBox}">                                
                             </GroupBox>
-                             
+                            <GroupBox 
+                                Grid.Column="3"
+                                Header=" 9" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="4"
+                                Header=" 10" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column=" 5"
+                                Header=" 11" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column=" 6"
+                                Header=" 12" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>                            
                             <!--<Grid Grid.Column="1">
 							</Grid>-->
 							<!-- 
@@ -235,7 +254,72 @@
 							</Canvas>
 							-->                            
 						</Grid>
-					</Grid>
+                        <Grid
+							Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition
+									Width="20" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="100" />
+                            </Grid.ColumnDefinitions>
+                            <GroupBox
+                                Grid.Column="1"
+                                Header=" 1" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="2"
+                                Header=" 2" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="3"
+                                Header=" 3" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="4"
+                                Header=" 4" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column=" 5"
+                                Header=" 5" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column=" 6"
+                                Header=" 6" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <!--<Grid Grid.Column="1">
+							</Grid>-->
+                            <!-- 
+							<Canvas
+								Grid.Column="1">
+								<Rectangle
+									Height="235"
+									Width="152"
+									Fill="White"
+									Opacity="0.2"
+									Canvas.Left="8"
+									Canvas.Top="8" />
+							</Canvas>
+							-->
+                        </Grid>
+                    </Grid>
 				</Grid>
 			</TabItem>
 			<TabItem
