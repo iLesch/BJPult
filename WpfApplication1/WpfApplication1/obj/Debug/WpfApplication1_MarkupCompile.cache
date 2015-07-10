@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\projects\bjpult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\
+=======
+F:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\obj\Debug\
+>>>>>>> origin/dev_core
 WpfApplication1
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\projects\bjpult\BJPult\WpfApplication1\WpfApplication1\App.xaml
 11151548125
 
 71233439993
 14-1241969411
+=======
+F:\projects\BJPult\BJPult\WpfApplication1\WpfApplication1\App.xaml
+11151548125
+
+91304663631
+70-1182773985
+>>>>>>> origin/dev_core
 MainWindow.xaml;
 
 False
