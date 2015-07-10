@@ -130,7 +130,7 @@
 	<Grid
 		Background="Gray">
 		<TabControl
-			Background="Silver">
+			Background="Silver" Margin="7,-1,-46,1">
 			<TabItem
 				Header="Presets">
 				<Grid>
@@ -147,7 +147,7 @@
 							<RowDefinition
 								Height="250" />
 							<RowDefinition
-								Height="200" />
+								Height="250" />
 						</Grid.RowDefinitions>
 						<Button
 							Grid.Row="0"
@@ -219,7 +219,27 @@
                                 Header=" 8" 
                                 Style="{StaticResource BankGroupBox}">                                
                             </GroupBox>
-                             
+                            <GroupBox 
+                                Grid.Column="3"
+                                Header=" 9" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="4"
+                                Header=" 10" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="5"
+                                Header=" 11" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="6"
+                                Header=" 12" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+
                             <!--<Grid Grid.Column="1">
 							</Grid>-->
 							<!-- 
@@ -235,7 +255,73 @@
 							</Canvas>
 							-->                            
 						</Grid>
-					</Grid>
+                        <Grid
+							Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition
+									Width="20" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="170" />
+                                <ColumnDefinition
+									Width="100" />
+                            </Grid.ColumnDefinitions>
+                            <GroupBox 
+                                Grid.Column="1"
+                                Header=" 1" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="2"
+                                Header=" 2" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="3"
+                                Header=" 3" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="4"
+                                Header=" 4" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="5"
+                                Header=" 5" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+                            <GroupBox 
+                                Grid.Column="6"
+                                Header=" 6" 
+                                Style="{StaticResource BankGroupBox}">
+                            </GroupBox>
+
+                            <!--<Grid Grid.Column="1">
+							</Grid>-->
+                            <!-- 
+							<Canvas
+								Grid.Column="1">
+								<Rectangle
+									Height="235"
+									Width="152"
+									Fill="White"
+									Opacity="0.2"
+									Canvas.Left="8"
+									Canvas.Top="8" />
+							</Canvas>
+							-->
+                        </Grid>
+                    </Grid>
 				</Grid>
 			</TabItem>
 			<TabItem
